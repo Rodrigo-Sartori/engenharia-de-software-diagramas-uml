@@ -7029,6 +7029,26 @@
 						quid       	"5CD76F4C024A"
 						concurrency 	"Sequential"
 						opExportControl 	"Public"
+						uid        	0)
+					    (object Operation "btn_Editar"
+						quid       	"5CD795540357"
+						concurrency 	"Sequential"
+						opExportControl 	"Public"
+						uid        	0)
+					    (object Operation "btn_Excluir"
+						quid       	"5CD7955F01A0"
+						concurrency 	"Sequential"
+						opExportControl 	"Public"
+						uid        	0)
+					    (object Operation "btn_Adicionar"
+						quid       	"5CD7956C0093"
+						concurrency 	"Sequential"
+						opExportControl 	"Public"
+						uid        	0)
+					    (object Operation "formFuncionario"
+						quid       	"5CD79574018B"
+						concurrency 	"Sequential"
+						opExportControl 	"Public"
 						uid        	0)))
 				    (object UseCase "rsucControlarFuncionario"
 					quid       	"5C9D70180134"
@@ -7161,23 +7181,23 @@
 								supplier   	"$UNNAMED$46"
 								quidu      	"5CD0B3990376"
 								messages   	(list Messages
-								    (object Message "formFuncionario"
+								    (object Message "formFuncionario( )"
 									quid       	"5CD76D7703CC"
 									frequency  	"Aperiodic"
 									synchronization 	"Simple"
 									dir        	"FromClientToSupplier"
 									sequence   	"1"
 									ordinal    	0
-									quidu      	"000000000000"
+									quidu      	"5CD79574018B"
 									creation   	FALSE)
-								    (object Message "btn_Adicionar"
+								    (object Message "btn_Adicionar( )"
 									quid       	"5CD76E5A0017"
 									frequency  	"Aperiodic"
 									synchronization 	"Simple"
 									dir        	"FromClientToSupplier"
 									sequence   	"2"
 									ordinal    	3
-									quidu      	"000000000000"
+									quidu      	"5CD7956C0093"
 									creation   	FALSE)
 								    (object Message "btn_Salvar( )"
 									quid       	"5CD76E7E0135"
@@ -7188,23 +7208,23 @@
 									ordinal    	5
 									quidu      	"5CD76E8000A8"
 									creation   	FALSE)
-								    (object Message "btn_Editar"
+								    (object Message "btn_Editar( )"
 									quid       	"5CD76EDA015E"
 									frequency  	"Aperiodic"
 									synchronization 	"Simple"
 									dir        	"FromClientToSupplier"
 									sequence   	"4"
 									ordinal    	8
-									quidu      	"000000000000"
+									quidu      	"5CD795540357"
 									creation   	FALSE)
-								    (object Message "btn_Excluir"
+								    (object Message "btn_Excluir( )"
 									quid       	"5CD76F010349"
 									frequency  	"Aperiodic"
 									synchronization 	"Simple"
 									dir        	"FromClientToSupplier"
 									sequence   	"5"
 									ordinal    	12
-									quidu      	"000000000000"
+									quidu      	"5CD7955F01A0"
 									creation   	FALSE))))
 							class      	"Use Case View::Use-Case Model::Actors::saGerente"
 							quidu      	"5BAC03FB0318"
@@ -7285,6 +7305,23 @@
 							line_color 	3342489
 							fill_color 	13434879
 							quidu      	"5CD0B3470222"
+							compartment 	(object Compartment
+							    Parent_View 	@254
+							    location   	(89, 659)
+							    font       	(object Font
+								size       	9
+								face       	"Arial"
+								bold       	FALSE
+								italics    	FALSE
+								underline  	FALSE
+								strike     	FALSE
+								color      	0
+								default_color 	TRUE)
+							    icon_style 	"Icon"
+							    anchor     	2
+							    nlines     	10
+							    max_width  	394
+							    justify    	0)
 							width      	230
 							height     	154
 							annotation 	8
@@ -7336,7 +7373,7 @@
 						max_height 	28350
 						max_width  	21600
 						origin_x   	0
-						origin_y   	0
+						origin_y   	2000
 						items      	(list diagram_item_list
 						    (object InterObjView "$UNNAMED$48" @258
 							location   	(272, 400)
@@ -7589,7 +7626,7 @@
 							    height     	90
 							    y_coord    	0
 							    Nested     	FALSE))
-						    (object InterMessView "formFuncionario" @284
+						    (object InterMessView "formFuncionario( )" @284
 							location   	(16, 608)
 							font       	(object Font
 							    size       	9
@@ -7615,9 +7652,9 @@
 							    quidu      	"5CD76D7703CC"
 							    anchor_loc 	1
 							    nlines     	1
-							    max_width  	319
+							    max_width  	354
 							    justify    	0
-							    label      	"formFuncionario"
+							    label      	"formFuncionario( )"
 							    pctDist    	0.500000
 							    height     	45
 							    orientation 	0)
@@ -7709,7 +7746,7 @@
 							origin     	(846, 843)
 							terminus   	(1296, 843)
 							ordinal    	2)
-						    (object InterMessView "btn_Adicionar" @290
+						    (object InterMessView "btn_Adicionar( )" @290
 							location   	(16, 992)
 							font       	(object Font
 							    size       	9
@@ -7735,9 +7772,9 @@
 							    quidu      	"5CD76E5A0017"
 							    anchor_loc 	1
 							    nlines     	1
-							    max_width  	272
+							    max_width  	307
 							    justify    	0
-							    label      	"btn_Adicionar"
+							    label      	"btn_Adicionar( )"
 							    pctDist    	0.500975
 							    height     	44
 							    orientation 	0)
@@ -7909,7 +7946,7 @@
 							origin     	(846, 1483)
 							terminus   	(1296, 1483)
 							ordinal    	7)
-						    (object InterMessView "btn_Editar" @300
+						    (object InterMessView "btn_Editar( )" @300
 							location   	(16, 1600)
 							font       	(object Font
 							    size       	9
@@ -7935,9 +7972,9 @@
 							    quidu      	"5CD76EDA015E"
 							    anchor_loc 	1
 							    nlines     	1
-							    max_width  	216
+							    max_width  	251
 							    justify    	0
-							    label      	"btn_Editar"
+							    label      	"btn_Editar( )"
 							    pctDist    	0.500000
 							    height     	45
 							    orientation 	0)
@@ -8029,7 +8066,7 @@
 							origin     	(846, 2077)
 							terminus   	(1296, 2077)
 							ordinal    	11)
-						    (object InterMessView "btn_Excluir" @306
+						    (object InterMessView "btn_Excluir( )" @306
 							location   	(16, 2210)
 							font       	(object Font
 							    size       	9
@@ -8055,9 +8092,9 @@
 							    quidu      	"5CD76F010349"
 							    anchor_loc 	1
 							    nlines     	1
-							    max_width  	229
+							    max_width  	263
 							    justify    	0
-							    label      	"btn_Excluir"
+							    label      	"btn_Excluir( )"
 							    pctDist    	0.500000
 							    height     	45
 							    orientation 	0)
